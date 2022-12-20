@@ -2,10 +2,18 @@
 <html>
 <!-- Based off of https://developer.mozilla.org/en-US/docs/Web/HTML/Element -->
     <head>
+        <script type="text/javascript" src="functionalScripts.js"></script>
         <title>HTML Elements Menu</title>
     </head>
     <body>
         <h1>Menu</h1>
     </body>
-    <button onclick="location.href='HTMLElementsMainRoot.html'">testing?</button>
+    <div class="maindropdown">
+        <button onclick="dropdownFunction()">Trigger Dropdown</button>
+        <div class="dropdowncontent">
+            <button onclick="location.href='index.html'"> Button 1</button>
+            <button onclick="location.href='index.html'"> Button 2</button>
+            <button onclick="location.href='index.html'"> Button 3</button>
+        </div>
+    </div>
 </html>

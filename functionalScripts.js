@@ -1,18 +1,19 @@
 function dropdownFunction()
 {
-    document.getElementsByClassName("dropdowncontent")[0].style.visibility = "hidden";
+    document.getElementsByClassName("dropdowncontent")[0].style.display = "none";
     console.log("test");
 
 }
 function toggleDropdown()
 {
-    if(document.getElementsByClassName("dropdowncontent")[0].style.display =="initial")
+    console.log(getElementsByClassName("dropdowncontent")[0]);
+    if(document.getElementsByClassName("dropdowncontent")[0].style.display =="none")
     {
-        document.getElementsByClassName("dropdowncontent")[0].style.display = "none";
+        document.getElementsByClassName("dropdowncontent")[0].style.display ="initial";
     }
     else
     {
-        document.getElementsByClassName("dropdowncontent")[0].style.display ="initial";
+        document.getElementsByClassName("dropdowncontent")[0].style.display ="none";
     }
     console.log("test");
 
